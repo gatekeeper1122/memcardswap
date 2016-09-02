@@ -1,8 +1,8 @@
 TITLE_ID = MEMCRDSWP
 TARGET = memcardswap
-OBJS   = main.o
+OBJS   = main.o font.o graphics.o
 
-LIBS = 
+LIBS = -lSceCtrl_stub -lSceDisplay_stub
 
 PREFIX  = arm-vita-eabi
 CC      = $(PREFIX)-gcc
